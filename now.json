@@ -1,0 +1,16 @@
+{
+  "name": "i.maybea.dev",
+  "version": 2,
+  "public": false,
+  "alias": ["i.maybea.dev"],
+  "routes": [{
+    "src": "/(.*)",
+    "status": 301,
+    "headers": {
+      "Location": "https://mudit.xyz/$1"
+    }
+  }],
+  "github": {
+    "enabled": true
+  }
+}
