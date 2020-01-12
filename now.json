@@ -12,14 +12,15 @@
       }
     },
     {
-      "src": "/blog",
+      "src": "/blog/?",
       "status": 301,
       "headers": {
         "Location": "https://blog.mudit.xyz"
-      }
+      },
+      "continue": false
     },
     {
-      "src": "/blog(/.*)?",
+      "src": "/blog(/.+)?",
       "status": 301,
       "headers": {
         "Location": "https://blog.mudit.xyz/posts$1"
